@@ -1,0 +1,28 @@
+<h2>云旅通</h2>
+
+<%= form_for(resource, as: resource_name, url: session_path(resource_name), html: { "data-parsley-validate" => true }) do |f| %>
+  <div class="field">
+    <%= f.label :username, '手机' %><br />
+    <%= f.text_field :mobile, autofocus: true %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password, "密码" %><br />
+    <%= f.password_field :password, autocomplete: "off" %>
+  </div>
+
+  <% if devise_mapping.rememberable? -%>
+    <div class="field">
+      <%= f.check_box :remember_me %>
+      <%= f.label :remember_me, "记住我" %>
+    </div>
+  <% end -%>
+
+  <div class="actions">
+    <%= f.submit "登陆" %>
+  </div>
+<% end %>
+
+<%= render "users/shared/links" %>
+
+
