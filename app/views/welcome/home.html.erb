@@ -1,8 +1,8 @@
-<h1>云旅通</h1>
+<div class="row">
+  <%= render 'shared/panel' %>
 
-<% if signed_in? %>
+  <div class="col-md-10">
     <h1> 欢迎 <%= current_user.mobile %> </h1>
     <%= link_to "注销", destroy_user_session_path, :method => :delete %>
-<% else %>
-    <%= link_to "登陆", new_user_session_path %>
-<% end %>
+  </div>
+</div>

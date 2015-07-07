@@ -1,4 +1,4 @@
-class WechatController < ApplicationController
+class WechatsController < ApplicationController
   wechat_responder appid: "app1", secret: "secret1", token: "token1", access_token: Rails.root.join("tmp/access_token1")
 
 

@@ -11,6 +11,8 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'mysql2'
 gem 'devise'
+gem 'bootstrap-sass'
+gem 'bootstrap-sass-extras'
 gem "wechat-rails", git:"https://github.com/skinnyworm/wechat-rails"
 
 
